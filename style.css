@@ -154,30 +154,32 @@ h2 {
     border: none;
 }
 
-.pagination-container {
+
+.dots {
     position: absolute;
-    bottom: -40;
-    left: 4%;
+    bottom: -25px;
+    left: 7%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
-    margin-top: 16px;
 }
 
-.pagination-dot {
-    width: 12px;
-    height: 12px;
-    background-color: #ccc;
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: black;
     border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
 }
 
-.pagination-dot.active {
+.dot.active,
+.dot:hover {
     background-color: #FF3147;
 }
 
-.relative:hover.pagination-container {
-    transform: translateX(-50%) translateY(-20px);
-    transition: transform 0.3s ease;
+.slide img:hover+.dots .dot {
+    background-color: red;
 }
 
 .box {
