@@ -23,3 +23,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+function changeImage(imageSrc, element) {
+  // Change the main image
+  document.getElementById("main-image").src = imageSrc;
+
+  // Remove active class from all description divs
+  var descriptions = document.querySelectorAll(
+    ".description1, .description2, .description3"
+  );
+  descriptions.forEach(function (desc) {
+    desc.classList.remove("active");
+  });
+
+  // Add active class to the clicked description div
+  element.classList.add("active");
+}

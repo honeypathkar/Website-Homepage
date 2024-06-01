@@ -38,33 +38,37 @@
         <button class="contact" onclick="openPopup()">CONTACT US</button>
         <div id="myPopup" class="popup">
           <span class="close" onclick="closePopup()">&times;</span>
-          <form action="https://getform.io/f/pbgxwjka" method="post" class="form">
-              <h2>Talk to us</h2>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="Work email:"
-              />
-              <input
-                type="text"
-                id="fname"
-                name="fname"
-                placeholder="First name: "
-              />
-              <input
-                type="text"
-                id="lname"
-                name="lname"
-                placeholder="Last name: "
-              />
-              <input type="checkbox" id="agree" name="agree" />
-              <label for="agree">
-                I agree to Fyle's terms and conditions, and provide consent to
-                send me communication.</label
-              >
-              <input type="submit" value="Contact Us" />
+          <form
+            action="https://getform.io/f/pbgxwjka"
+            method="post"
+            class="form"
+          >
+            <h2>Talk to us</h2>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Work email:"
+            />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="First name: "
+            />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Last name: "
+            />
+            <input type="checkbox" id="agree" name="agree" />
+            <label for="agree">
+              I agree to Fyle's terms and conditions, and provide consent to
+              send me communication.</label
+            >
+            <input type="submit" value="Contact Us" />
           </form>
         </div>
       </div>
@@ -181,24 +185,31 @@
       </div>
       <div class="d-flex child4">
         <div class="project">
-          <img src="images/image.png" alt="image" />
+          <img
+            id="main-image"
+            src="images/image.png"
+            alt="Main Image"
+          />
         </div>
         <div class="description">
-          <div class="description1">
+          <div
+            class="description1"
+            onclick="changeImage('images/image.png', this)"
+          >
             <h5 class="text-center">Genderless Kei - Japan's Hot</h5>
             <p>
               Set to launch on manufacturer's new A330neo aircraft in 2017, it's
               offering lots of..
             </p>
           </div>
-          <div class="description2">
-            <h5 class="text-center">Batter Strategy & Quaility</h5>
+          <div class="description2" onclick="changeImage('images/2.png', this)">
+            <h5 class="text-center">Batter Strategy & Quality</h5>
             <p>
               Set to launch on manufacturer's new A330neo aircraft in 2017, it's
               offering lots of..
             </p>
           </div>
-          <div class="description3">
+          <div class="description3" onclick="changeImage('images/3.png', this)">
             <h5 class="text-center">Genderless Kei - Japan's Hot</h5>
             <p>
               Set to launch on manufacturer's new A330neo aircraft in 2017, it's
@@ -208,6 +219,7 @@
         </div>
       </div>
     </div>
+
     <div class="section5">
       <div class="text-center" style="margin-bottom: -110px">
         <h3 class="fs-4">Expert Growth</h3>

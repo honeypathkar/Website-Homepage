@@ -223,7 +223,9 @@ h5 {
     cursor: pointer;
 }
 
-.description1:active {
+.description1.active,
+.description2.active,
+.description3.active {
     background-color: #FF3147;
     color: white;
 }
