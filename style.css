@@ -237,3 +237,29 @@ h5 {
     opacity: 1;
     padding-left: 35px;
 }
+
+.box1 {
+    width: 40px;
+    margin-left: 41%;
+}
+
+.growth {
+    border: 1px solid rgb(219, 219, 219);
+    padding: 10px;
+    cursor: pointer;
+}
+
+h6 {
+    font-size: 60px;
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+.growth span {
+    font-family: "Poppins";
+    font-size: 24px;
+}
+
+.growth:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
