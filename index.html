@@ -35,7 +35,38 @@
           voluptates aut, quas mollitia quo veniam vel ipsum tempora eum soluta
           earum.
         </p>
-        <button class="contact">CONTACT US</button>
+        <button class="contact" onclick="openPopup()">CONTACT US</button>
+        <div id="myPopup" class="popup">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <form action="https://getform.io/f/pbgxwjka" method="post" class="form">
+              <h2>Talk to us</h2>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Work email:"
+              />
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="First name: "
+              />
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Last name: "
+              />
+              <input type="checkbox" id="agree" name="agree" />
+              <label for="agree">
+                I agree to Fyle's terms and conditions, and provide consent to
+                send me communication.</label
+              >
+              <input type="submit" value="Contact Us" />
+          </form>
+        </div>
       </div>
       <img src="images/hero.png" alt="heroImage" class="child2" />
     </div>
@@ -79,7 +110,9 @@
                 Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
                 Pellentesque
               </span>
-              <button>READ MORE &rarr;</button>
+              <a href="http://www.fylehq.com" target="_blank" rel="noprefrrer">
+                <button>READ MORE &rarr;</button>
+              </a>
             </div>
           </div>
           <div class="image-container">
@@ -176,7 +209,7 @@
       </div>
     </div>
     <div class="section5">
-      <div class="text-center" style="margin-bottom: -110px;">
+      <div class="text-center" style="margin-bottom: -110px">
         <h3 class="fs-4">Expert Growth</h3>
         <h1 class="fsw" style="margin: 40px 25%">Our Company Growth</h1>
       </div>
@@ -216,5 +249,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
