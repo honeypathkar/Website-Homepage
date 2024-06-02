@@ -1,116 +1,113 @@
-body {
-    scroll-behavior: smooth;
-}
-
 .section1,
-.section2 {
+.section2,
+.section3,
+.section4,
+.section5 {
     margin-top: 100px;
-    /* padding: 0 80px; */
-    margin-bottom: 200px;
+    margin-bottom: 50px;
+    padding: 0 15px;
 }
 
 .section1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
-.child3{
+.child1 {
+    flex: 1;
+    min-width: 300px;
+}
+
+.child2 {
+    /* flex: 1; */
+    min-width: 300px;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 100%;
+    margin-left: 50px;
+    width: 510px;
+    height: 750px;
+}
+
+.child3 {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.child4{
+.child4 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.section3,
-.section5 {
-    margin-top: 100px;
-    /* padding: 0 80px; */
-    margin-bottom: 50px;
-}
-
-.child1,
-.child3,
-.grid,
-.child4 {
-    margin-top: 10%;
-    /* margin-left: 30px; */
-
-}
-
-.grid{
+.grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-p {
-    top: 502px;
-    left: 375px;
-    width: 584px;
-    height: 83px;
-    text-align: left;
-    font: normal normal normal 16px/30px Poppins;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1
+.grid {
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
 }
 
-.fsw {
-    width: 614px;
-    height: 140px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal 600 49px/65px Poppins;
-    letter-spacing: 0px;
-    color: #000000;
+.box1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+}
+
+h6 {
+    font-size: 50px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
-    opacity: 1;
+    color: #000;
+    font-size: 24px;
 }
 
 h1 {
-    width: 614px;
-    height: 140px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal 600 60px/80px Poppins;
-    letter-spacing: 0px;
-    color: #000000;
-    text-transform: uppercase;
-    opacity: 1;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 h3 {
     color: #FF3147;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1px;
-    text-transform: uppercase;
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5;
 }
 
 .contact {
     background-color: #FF3147;
     border: none;
-    padding: 15px 30px;
+    padding: 10px 20px;
     color: white;
-    font-size: 14px;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    margin-top: 90px;
-}
-
-.child2 {
-    margin-left: 50px;
-    width: 487px;
-    height: 737px;
-}
-
-h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 16px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 .relative {
@@ -226,25 +223,24 @@ h5 {
     padding-top: 10px;
 }
 
-.description {
-    padding-left: 30px;
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.project img {
-    width: 770px;
-    height: 567px;
+.description {
+    flex: 1;
+    margin: 10px;
 }
 
 .description1,
 .description2,
 .description3 {
     background-color: #F6F6F6;
-    top: 2718px;
-    left: 1175px;
-    width: 370px;
-    height: 189px;
-    padding-top: 20px;
+    padding: 20px;
     cursor: pointer;
+    margin: 10px 0;
 }
 
 .description1.active,
@@ -254,38 +250,12 @@ h5 {
     color: white;
 }
 
-.description p {
-    width: 293px;
-    height: 79px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal normal 16px/28px Poppins;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-    padding-left: 35px;
-}
-
-.box1 {
-    width: 40px;
-    margin-left: 41%;
-}
-
 .growth {
     border: 1px solid rgb(219, 219, 219);
-    padding: 20px;
+    padding: 40px;
     cursor: pointer;
-}
-
-h6 {
-    font-size: 60px;
-    font-family: "Poppins";
-    font-weight: 300;
-}
-
-.growth span {
-    font-family: "Poppins";
-    font-size: 24px;
+    /* flex: 1 1 calc(25% - 20px); */
+    margin: 10px;
 }
 
 .growth:hover {
@@ -301,7 +271,8 @@ h6 {
     background-color: #fff;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     padding: 20px;
 }
 
@@ -309,52 +280,86 @@ h6 {
     float: right;
     font-size: 28px;
     font-weight: bold;
-}
-
-.popup .close:hover,
-.popup .close:focus {
-    color: red;
-    text-decoration: none;
     cursor: pointer;
 }
 
-.popup .form {
-    margin-top: 20px;
-}
-
-.popup .form label {
-    display: block;
-    margin-bottom: 5px;
-    font-family: "Poppins";
-}
-
 .popup .form input[type="text"],
-.popup .form input[type="email"] {
+.popup .form input[type="email"],
+.popup .form input[type="submit"] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px;
     margin: 8px 0;
     display: inline-block;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid rgb(198, 198, 198);
     box-sizing: border-box;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
 }
 
 .popup .form input[type="submit"] {
     background-color: #FF3147;
     color: white;
-    padding: 12px 20px;
-    margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
 }
 
 .popup .form input[type="submit"]:hover {
     background-color: #fd5263;
 }
 
-.popup .form input[type="checkbox"] {
-    margin-right: 5px;
+/* @media screen and (max-width: 600px) {
+    .section1>.child2 {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 1000px) {
+    .child2 {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section1 {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .section1 .child1 {
+        flex: 1 1 100%;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+
+    /* h1 {
+        margin: 30px 6%;
+    } */
+
+    /* .child2 {
+        display: none !important;
+    } */
+
+    .grid {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+
+    /* .fsw{
+        margin: 30px 6%;
+    } */
+
+    .description {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
 }
