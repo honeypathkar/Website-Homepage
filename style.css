@@ -13,19 +13,19 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .child1 {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     min-width: 300px;
 }
 
@@ -70,10 +70,10 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .grid {
@@ -81,16 +81,16 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .grid {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 calc(25% - 20px);
-            flex: 1 1 calc(25% - 20px);
+    -ms-flex: 1 1 calc(25% - 20px);
+    flex: 1 1 calc(25% - 20px);
     margin: -9px;
 }
 
@@ -194,14 +194,14 @@ p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     height: 100%;
 }
 
@@ -237,8 +237,8 @@ p {
     bottom: -25px;
     left: 7%;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -291,8 +291,8 @@ h5 {
 
 .description {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     margin: 10px;
 }
 
@@ -321,7 +321,7 @@ h5 {
 
 .growth:hover {
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .popup {
@@ -330,11 +330,11 @@ h5 {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-color: #fff;
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     width: 90%;
     max-width: 400px;
@@ -349,6 +349,13 @@ h5 {
 }
 
 .popup .form input[type="text"],
+.popup .form input[type="email"] {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.popup .form input[type="text"],
 .popup .form input[type="email"],
 .popup .form input[type="submit"] {
     width: 100%;
@@ -356,7 +363,7 @@ h5 {
     margin: 8px 0;
     display: inline-block;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
@@ -387,15 +394,15 @@ h5 {
     .section1 {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         text-align: left;
     }
 
     .section1 .child1 {
         -webkit-box-flex: 1;
-            -ms-flex: 1 1 100%;
-                flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
     }
 
     .section1,
@@ -410,21 +417,21 @@ h5 {
 
     .grid {
         -webkit-box-flex: 1;
-            -ms-flex: 1 1 100%;
-                flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
         margin: -9px 0;
     }
 
     .card {
         -webkit-box-flex: 1;
-            -ms-flex: 1 1 100%;
-                flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
     }
 
     .description {
         -webkit-box-flex: 1;
-            -ms-flex: 1 1 100%;
-                flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
         /* padding: 10px; */
     }
 
